@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+</head>
+<body>
+    
+    <h1>Press Me</h1>
+
+    <form action="results.html" method="GET">
+
+        <div>
+            <!-- can use value to have default text in input field -->
+            <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter User Name" required>
+        </div>
+
+        <div>     
+            <label>Email
+                <input type="email" name="email" placeholder="Enter email" required>
+            </label>
+        </div>
+
+        <div>
+            <label>Password
+                <input type="password" name="password" placeholder="Enter password" required>
+            </label>
+        </div>
+
+        <div>
+            <label>Date
+                <input type="date" name="date">
+            </label>
+        </div>
+
+        <div>
+            Favorite Food
+            <div>
+                <label>Apple
+                    <input type="checkbox" name="apple" >
+                </label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>Orange
+                    <input type="checkbox" name="orange" >
+                </label>
+            </div>
+        </div> 
+        <div>
+            <div>
+                <label>Lime
+                    <input type="checkbox" name="lime" >
+                </label>
+            </div>
+        </div>
+
+        <div>
+            Gender
+            <div>
+                <label for="male">Male
+                    <input type="radio" name="gender" id="male" value="male">
+                </label>
+            </div>
+        </div>
+
+        
+        <div>
+            <div>
+                <label for="female">Feale
+                    <input type="radio" name="gender" id="female" value="female">
+                </label>
+            </div>
+        </div>
+        
+        <div>
+            <label for="eyeColor">Eye Color
+                <select id="eyeColor" name="eyeColor">
+                    <option value="Green">Green</option>
+                    <option label="Red" value="Red"></option>
+                    <option value="Brown">Brown</option>
+                    
+                </select>
+            </label>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
